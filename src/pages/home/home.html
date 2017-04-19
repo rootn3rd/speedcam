@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Speed Cam
+    </ion-title>
+    <ion-buttons right>
+      <button ion-button clear (click)="logout()">
+        Logout
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <img [src]="profilePicture" alt="profie_picture" class="profilePicture">
+    <ion-card-content>
+      <div class="fullname" [innerHTML]="fullName"></div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
